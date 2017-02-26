@@ -75,5 +75,5 @@ extension LocationSearchTable {
         dismiss(animated: true, completion: nil)
 }
 
-
 }
+
