@@ -19,14 +19,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     var resultSearchController:UISearchController? = nil
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        
-        //Remove Pin From Map
-        
-        removeAnnotation()
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -48,14 +40,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         let locationSearchTable = storyboard!.instantiateViewController(withIdentifier: "LocationSearchTable") as! LocationSearchTable
         resultSearchController = UISearchController(searchResultsController: locationSearchTable)
         resultSearchController?.searchResultsUpdater = locationSearchTable as? UISearchResultsUpdating
-        
-        
-        
-        //Long Press Gesture Recognizer
-        
-        let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(addAnnotationOnLongPress(gesture:)))
-        longPressGesture.minimumPressDuration = 1.0
-        self.mapView.addGestureRecognizer(longPressGesture)
+
         
         //Set Map Type
         
