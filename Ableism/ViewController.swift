@@ -49,9 +49,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         resultSearchController = UISearchController(searchResultsController: locationSearchTable)
         resultSearchController?.searchResultsUpdater = locationSearchTable as? UISearchResultsUpdating
         
-        //Set Search Table To Map
         
-        locationSearchTable.mapView = mapView
         
         //Long Press Gesture Recognizer
         
