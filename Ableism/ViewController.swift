@@ -22,6 +22,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Delegate Search Table
+        
+        locationSearchTable.handleMapSearchDelegate = self
+        
         //Search Bar Functions
         
         resultSearchController?.hidesNavigationBarDuringPresentation = false
@@ -145,5 +149,4 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         return annotationView
     }
     
-
 }
