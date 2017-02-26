@@ -21,6 +21,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hLW-WV-PNn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </stackView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Tlr-a3-f2M">
                                 <rect key="frame" x="0.0" y="154" width="375" height="513"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -47,6 +50,12 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hLW-WV-PNn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MFH-0O-3aD"/>
+                            <constraint firstItem="hLW-WV-PNn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ND1-Cd-fjL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hLW-WV-PNn" secondAttribute="bottom" id="b7y-hK-qqi"/>
+                            <constraint firstAttribute="trailing" secondItem="hLW-WV-PNn" secondAttribute="trailing" id="imj-c6-E0S"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="Tlr-a3-f2M" id="ngr-MI-DKr"/>
