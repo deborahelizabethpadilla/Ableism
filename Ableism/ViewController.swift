@@ -32,7 +32,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         
         let searchBar = resultSearchController!.searchBar
         searchBar.sizeToFit()
-        searchBar.placeholder = "Search for places"
+        searchBar.placeholder = "Search For Locations And Places"
         navigationItem.titleView = resultSearchController?.searchBar
         
         //UISearchController Set Up
