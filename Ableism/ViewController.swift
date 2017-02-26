@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
@@ -18,6 +19,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Long Press Gesture Recognizer
+        
+        let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(addAnnotationOnLongPress(gesture:)))
+        longPressGesture.minimumPressDuration = 1.0
+        self.mapView.addGestureRecognizer(longPressGesture)
         
         //Set Map Type
         
@@ -43,12 +50,34 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
 
 }
+    
     //Get Current Location
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-    let locValue:CLLocationCoordinate2D = manager.location!.coordinate
-    print("locations = \(locValue.latitude) \(locValue.longitude)")
+        let locValue:CLLocationCoordinate2D = manager.location!.coordinate
+        print("locations = \(locValue.latitude) \(locValue.longitude)")
+    }
+    
+    //Implement Long Gesture Recognizer
+    
+    func addAnnotationOnLongPress(gesture: UILongPressGestureRecognizer) {
+        
+        if gesture.state == .ended {
+            let point = gesture.location(in: self.mapView)
+            let coordinate = self.mapView.convert(point, toCoordinateFrom: self.mapView)
+            print(coordinate)
+            
+            //Use Coordinate To Add Pin
+            
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = coordinate
+            
+            //Set Title And Subtitle
+            annotation.title = "Title"
+            annotation.subtitle = "subtitle"
+            self.mapView.addAnnotation(annotation)
+        }
+
     }
 
 }
-
