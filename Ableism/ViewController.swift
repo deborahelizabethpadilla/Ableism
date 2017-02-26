@@ -127,6 +127,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         longPressGesture.minimumPressDuration = 2.0
         self.mapView.addGestureRecognizer(longPressGesture)
         
+        //Delete Pin
+        
         let removeAnnotation = self.mapView.annotations
         
         self.mapView.removeAnnotations(removeAnnotation)
