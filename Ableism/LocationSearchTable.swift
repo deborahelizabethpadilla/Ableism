@@ -71,7 +71,7 @@ extension LocationSearchTable {
 extension LocationSearchTable {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let selectedItem = matchingItems[indexPath.row].placemark
-        handleMapSearchDelegate?.dropPinZoomIn(selectedItem)
+        handleMapSearchDelegate?.addAnnotation(placemark: selectedItem)
         dismiss(animated: true, completion: nil)
 }
 

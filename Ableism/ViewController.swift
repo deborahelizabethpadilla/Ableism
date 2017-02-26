@@ -10,6 +10,10 @@ import UIKit
 import MapKit
 import CoreLocation
 
+protocol HandleMapSearch {
+    func addAnnotation(placemark:MKPlacemark)
+}
+
 
 class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
@@ -43,7 +47,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         
         //Delegate Search Table
         
-        locationSearchTable.handleMapSearchDelegate = self
+        locationSearchTable.handleMapSearchDelegate = self as? HandleMapSearch
 
         
         //Set Map Type
@@ -94,7 +98,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     //Implement Long Gesture Recognizer
     
-    func addAnnotationOnLongPress(gesture: UILongPressGestureRecognizer, placemark: MKPlacemark) {
+    func addAnnotation(gesture: UILongPressGestureRecognizer, placemark: MKPlacemark) {
         
         if gesture.state == .ended {
             
