@@ -11,7 +11,8 @@ import MapKit
 import CoreLocation
 
 
-class ViewController: UIViewController, CLLocationManagerDelegate {
+class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
+ 
 
     @IBOutlet var mapView: MKMapView!
     
@@ -28,7 +29,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         //Set Map Type
         
-        mapView.delegate = self as? MKMapViewDelegate
+        mapView.delegate = self
         
         mapView.mapType = .satelliteFlyover
         
@@ -78,6 +79,18 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             self.mapView.addAnnotation(annotation)
         }
 
+    }
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        
+        
+        //Set Annotation Color
+        
+        let annotationView = MKPinAnnotationView()
+        
+        annotationView.pinTintColor = .green
+        
+        return annotationView
     }
 
 }
