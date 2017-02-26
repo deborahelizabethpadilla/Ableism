@@ -17,13 +17,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     let locationManager = CLLocationManager()
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
         
-       //Remove Pin From Map
+        //Remove Pin From Map
         
         removeAnnotation()
-
     }
     
     override func viewDidLoad() {
