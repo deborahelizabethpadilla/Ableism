@@ -17,6 +17,15 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     let locationManager = CLLocationManager()
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+       //Remove Pin From Map
+        
+        removeAnnotation()
+
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -107,4 +116,21 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         }
         return annotationView
     }
+    
+    //Delete Pin
+    
+    func removeAnnotation() {
+        
+        //Long Press Gesture Recognizer
+        
+        let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(addAnnotationOnLongPress(gesture:)))
+        longPressGesture.minimumPressDuration = 2.0
+        self.mapView.addGestureRecognizer(longPressGesture)
+        
+        let removeAnnotation = self.mapView.annotations
+        
+        self.mapView.removeAnnotations(removeAnnotation)
+        
+    }
+    
 }
