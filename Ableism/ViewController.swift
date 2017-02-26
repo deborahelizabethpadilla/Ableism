@@ -66,6 +66,22 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         print("locations = \(locValue.latitude) \(locValue.longitude)")
     }
     
+    private func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+        if status == .authorizedWhenInUse {
+            locationManager.requestLocation()
+        }
+    }
+    
+    private func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if locations.first != nil {
+            print("location:: (location)")
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("error:: (error)")
+    }
+    
     //Implement Long Gesture Recognizer
     
     func addAnnotationOnLongPress(gesture: UILongPressGestureRecognizer) {
