@@ -30,10 +30,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //Set Search Table To Map
-        
-        locationSearchTable.mapView = mapView
-        
         //Search Bar Functions
         
         resultSearchController?.hidesNavigationBarDuringPresentation = false
@@ -52,6 +48,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         let locationSearchTable = storyboard!.instantiateViewController(withIdentifier: "LocationSearchTable") as! LocationSearchTable
         resultSearchController = UISearchController(searchResultsController: locationSearchTable)
         resultSearchController?.searchResultsUpdater = locationSearchTable as? UISearchResultsUpdating
+        
+        //Set Search Table To Map
+        
+        locationSearchTable.mapView = mapView
         
         //Long Press Gesture Recognizer
         
