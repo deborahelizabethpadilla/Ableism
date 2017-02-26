@@ -14,6 +14,7 @@
 		5086D73B1E629E8E0010748D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5086D7391E629E8E0010748D /* LaunchScreen.storyboard */; };
 		5086D7451E62A13A0010748D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5086D7441E62A13A0010748D /* MapKit.framework */; };
 		5086D7471E62A18F0010748D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5086D7461E62A18F0010748D /* CoreLocation.framework */; };
+		5086D7491E62B08C0010748D /* wheelchair.png in Resources */ = {isa = PBXBuildFile; fileRef = 5086D7481E62B08C0010748D /* wheelchair.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5086D73C1E629E8F0010748D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5086D7441E62A13A0010748D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5086D7461E62A18F0010748D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5086D7481E62B08C0010748D /* wheelchair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wheelchair.png; path = ../wheelchair.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				5086D7371E629E8E0010748D /* Assets.xcassets */,
 				5086D7391E629E8E0010748D /* LaunchScreen.storyboard */,
 				5086D73C1E629E8F0010748D /* Info.plist */,
+				5086D7481E62B08C0010748D /* wheelchair.png */,
 			);
 			name = Assets;
 			path = Ableism;
@@ -151,6 +154,7 @@
 			files = (
 				5086D73B1E629E8E0010748D /* LaunchScreen.storyboard in Resources */,
 				5086D7381E629E8E0010748D /* Assets.xcassets in Resources */,
+				5086D7491E62B08C0010748D /* wheelchair.png in Resources */,
 				5086D7361E629E8D0010748D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

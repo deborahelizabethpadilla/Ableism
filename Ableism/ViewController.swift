@@ -12,7 +12,6 @@ import CoreLocation
 
 
 class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
- 
 
     @IBOutlet var mapView: MKMapView!
     
@@ -64,6 +63,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     func addAnnotationOnLongPress(gesture: UILongPressGestureRecognizer) {
         
         if gesture.state == .ended {
+            
             let point = gesture.location(in: self.mapView)
             let coordinate = self.mapView.convert(point, toCoordinateFrom: self.mapView)
             print(coordinate)
@@ -74,6 +74,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
             annotation.coordinate = coordinate
             
             //Set Title And Subtitle
+            
             annotation.title = "Title"
             annotation.subtitle = "subtitle"
             self.mapView.addAnnotation(annotation)
@@ -81,16 +82,29 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
 
     }
     
+    //Set Custom Pin
+    
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        guard !(annotation is MKUserLocation) else {
+            return nil
+        }
         
+        let annotationIdentifier = "Identifier"
+        var annotationView: MKAnnotationView?
+        if let dequeuedAnnotationView = mapView.dequeueReusableAnnotationView(withIdentifier: annotationIdentifier) {
+            annotationView = dequeuedAnnotationView
+            annotationView?.annotation = annotation
+        }
+        else {
+            annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: annotationIdentifier)
+            annotationView?.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+        }
         
-        //Set Annotation Color
-        
-        let annotationView = MKPinAnnotationView()
-        
-        annotationView.pinTintColor = .green
-        
+        if let annotationView = annotationView {
+            
+            annotationView.canShowCallout = true
+            annotationView.image = UIImage(named: "wheelchair.png")
+        }
         return annotationView
     }
-
 }
