@@ -105,7 +105,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     //Implement Long Gesture Recognizer
     
-    func addAnnotationOnLongPress(gesture: UILongPressGestureRecognizer) {
+    func addAnnotationOnLongPress(gesture: UILongPressGestureRecognizer, placemark: MKPlacemark) {
         
         if gesture.state == .ended {
             
@@ -113,19 +113,27 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
             let coordinate = self.mapView.convert(point, toCoordinateFrom: self.mapView)
             print(coordinate)
             
-            //Use Coordinate To Add Pin
+            //Use Coordinate To Add Pin/Catch Pin
             
             let annotation = MKPointAnnotation()
             
             //Set Title And Subtitle
             
-            annotation.title =
-            annotation.coordinate = 
-            self.mapView.addAnnotation(annotation)
+            annotation.title = placemark.title
+            annotation.coordinate = placemark.coordinate
+            if let city = placemark.locality,
+                let state = placemark.administrativeArea {
+                annotation.subtitle = "(city) (state)"
+            }
+            mapView.addAnnotation(annotation)
+            let span = MKCoordinateSpanMake(0.05, 0.05)
+            let region = MKCoordinateRegionMake(placemark.coordinate, span)
+            mapView.setRegion(region, animated: true)
+
         }
         
     }
-    
+
     //Set Custom Pin
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
@@ -152,22 +160,5 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         return annotationView
     }
     
-    //Delete Pin
-    
-    func removeAnnotation() {
-        
-        //Long Press Gesture Recognizer
-        
-        let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(addAnnotationOnLongPress(gesture:)))
-        longPressGesture.minimumPressDuration = 2.0
-        self.mapView.addGestureRecognizer(longPressGesture)
-        
-        //Delete Pin
-        
-        let removeAnnotation = self.mapView.annotations
-        
-        self.mapView.removeAnnotations(removeAnnotation)
-        
-    }
-    
+
 }
