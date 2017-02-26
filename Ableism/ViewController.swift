@@ -75,7 +75,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
             
             //Set Title And Subtitle
             
-            annotation.title = "Name Of Place"
+            annotation.title = "Place Name"
             annotation.subtitle = "Accomodations"
             self.mapView.addAnnotation(annotation)
         }
