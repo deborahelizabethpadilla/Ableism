@@ -116,12 +116,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
             //Use Coordinate To Add Pin
             
             let annotation = MKPointAnnotation()
-            annotation.coordinate = coordinate
             
             //Set Title And Subtitle
             
-            annotation.title = "Place Name"
-            annotation.subtitle = "Accomodations"
+            annotation.title =
+            annotation.coordinate = 
             self.mapView.addAnnotation(annotation)
         }
         
