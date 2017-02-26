@@ -22,10 +22,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //Delegate Search Table
-        
-        locationSearchTable.handleMapSearchDelegate = self
-        
         //Search Bar Functions
         
         resultSearchController?.hidesNavigationBarDuringPresentation = false
@@ -44,6 +40,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         let locationSearchTable = storyboard!.instantiateViewController(withIdentifier: "LocationSearchTable") as! LocationSearchTable
         resultSearchController = UISearchController(searchResultsController: locationSearchTable)
         resultSearchController?.searchResultsUpdater = locationSearchTable as? UISearchResultsUpdating
+        
+        //Delegate Search Table
+        
+        locationSearchTable.handleMapSearchDelegate = self
 
         
         //Set Map Type
@@ -112,7 +112,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
             annotation.coordinate = placemark.coordinate
             if let city = placemark.locality,
                 let state = placemark.administrativeArea {
-                annotation.subtitle = "(city) (state)"
+                annotation.subtitle = city
+                annotation.subtitle = state
+            
             }
             mapView.addAnnotation(annotation)
             let span = MKCoordinateSpanMake(0.05, 0.05)
