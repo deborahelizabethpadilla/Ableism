@@ -12,7 +12,7 @@ import CoreLocation
 
 
 class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
-
+    
     @IBOutlet var mapView: MKMapView!
     
     let locationManager = CLLocationManager()
@@ -54,10 +54,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
             locationManager.startUpdatingLocation()
             
             
+        }
+        
+        
     }
-
-
-}
     
     //Get Current Location
     
@@ -87,7 +87,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
             annotation.subtitle = "Accomodations"
             self.mapView.addAnnotation(annotation)
         }
-
+        
     }
     
     //Set Custom Pin
