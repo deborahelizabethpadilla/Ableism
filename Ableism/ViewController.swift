@@ -101,15 +101,13 @@ extension ViewController {
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if let location = locations.first {
-            let span = MKCoordinateSpanMake(0.05, 0.05)
-            let region = MKCoordinateRegion(center: location.coordinate, span: span)
-            mapView.setRegion(region, animated: true)
+        if locations.first != nil {
+            print("location:: (location)")
         }
     }
     
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
-        print("error:: (error)")
+        print("error:: \(error.localizedDescription)")
     }
     
 }
