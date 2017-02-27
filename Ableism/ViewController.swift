@@ -23,10 +23,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     var resultSearchController:UISearchController? = nil
     
-    let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Tap Recognizer
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        
+        view.addGestureRecognizer(tap)
         
         //Search Bar Functions
         
