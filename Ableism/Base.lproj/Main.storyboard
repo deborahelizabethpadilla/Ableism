@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="u7Y-aD-QnD">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gJb-4n-L4t">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </stackView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tlr-a3-f2M">
@@ -38,25 +38,24 @@
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search Location" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h3b-P9-RMh">
-                                <rect key="frame" x="16" y="72" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N3P-BY-Cfx">
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="u7Y-aD-QnD" secondAttribute="trailing" id="5cM-6G-ZV8"/>
-                            <constraint firstItem="u7Y-aD-QnD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HEL-fq-yAI"/>
-                            <constraint firstItem="u7Y-aD-QnD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="L6C-yW-gpn"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="u7Y-aD-QnD" secondAttribute="bottom" id="o9p-ID-Wid"/>
+                            <constraint firstItem="gJb-4n-L4t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7nt-oo-wrj"/>
+                            <constraint firstItem="gJb-4n-L4t" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NPD-JY-Kzh"/>
+                            <constraint firstAttribute="trailing" secondItem="gJb-4n-L4t" secondAttribute="trailing" id="lNE-Co-h3y"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gJb-4n-L4t" secondAttribute="bottom" id="nlq-eu-W4N"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Gy8-2a-v6U"/>
                     <connections>
                         <outlet property="mapView" destination="Tlr-a3-f2M" id="ngr-MI-DKr"/>
-                        <outlet property="searchTextField" destination="h3b-P9-RMh" id="GvJ-uH-IGk"/>
+                        <outlet property="searchBar" destination="N3P-BY-Cfx" id="007-fC-sRY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

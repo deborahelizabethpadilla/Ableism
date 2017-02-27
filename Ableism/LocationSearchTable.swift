@@ -13,27 +13,33 @@ class LocationSearchTable: UITableViewController {
     
     var matchingItems:[MKMapItem] = []
     var mapView: MKMapView? = nil
-    
-    var handleMapSearchDelegate:HandleMapSearch? = nil
+}
 
+extension LocationSearchTable {
+    
     func parseAddress(selectedItem:MKPlacemark) -> String {
- 
+    
         let firstSpace = (selectedItem.subThoroughfare != nil && selectedItem.thoroughfare != nil) ? " " : ""
+
         let comma = (selectedItem.subThoroughfare != nil || selectedItem.thoroughfare != nil) && (selectedItem.subAdministrativeArea != nil || selectedItem.administrativeArea != nil) ? ", " : ""
+  
         let secondSpace = (selectedItem.subAdministrativeArea != nil && selectedItem.administrativeArea != nil) ? " " : ""
         let addressLine = String(
             format:"%@%@%@%@%@%@%@",
+
             selectedItem.subThoroughfare ?? "",
             firstSpace,
+    
             selectedItem.thoroughfare ?? "",
             comma,
+   
             selectedItem.locality ?? "",
             secondSpace,
+     
             selectedItem.administrativeArea ?? ""
         )
         return addressLine
-    
-}
+    }
     
     func updateSearchResultsForSearchController(searchController: UISearchController) {
         guard let mapView = mapView,
@@ -49,17 +55,17 @@ class LocationSearchTable: UITableViewController {
             self.matchingItems = response.mapItems
             self.tableView.reloadData()
         }
-
-}
-
+    }
 }
 
 extension LocationSearchTable {
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return matchingItems.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
         let selectedItem = matchingItems[indexPath.row].placemark
         cell.textLabel?.text = selectedItem.name
@@ -67,13 +73,3 @@ extension LocationSearchTable {
         return cell
     }
 }
-
-extension LocationSearchTable {
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let selectedItem = matchingItems[indexPath.row].placemark
-        handleMapSearchDelegate?.addAnnotation(placemark: selectedItem)
-        dismiss(animated: true, completion: nil)
-}
-
-}
-
