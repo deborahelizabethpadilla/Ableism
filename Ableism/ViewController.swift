@@ -11,7 +11,7 @@ import MapKit
 import CoreLocation
 
 protocol HandleMapSearch {
-    func addAnnotation(placemark:MKPlacemark)
+    func dropPinZoomIn(placemark:MKPlacemark)
 }
 
 class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate, UITextFieldDelegate {
@@ -23,6 +23,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     var locationManager = CLLocationManager()
     
     var resultSearchController:UISearchController? = nil
+    
+    var selectedPin:MKPlacemark? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,6 +73,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         
         locationSearchTable.mapView = mapView
         
+        //Wire Protocol 
+        
+        locationSearchTable.handleMapSearchDelegate = self
+      
+        
     }
     
     //Close Keyboard With Tap On Screen
@@ -110,4 +117,25 @@ extension ViewController {
         print("error:: \(error.localizedDescription)")
     }
     
+}
+
+extension ViewController: HandleMapSearch {
+    
+    func dropPinZoomIn(placemark:MKPlacemark){
+        // cache the pin
+        selectedPin = placemark
+        // clear existing pins
+        mapView.removeAnnotations(mapView.annotations)
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = placemark.coordinate
+        annotation.title = placemark.name
+        if let _ = placemark.locality,
+            let _ = placemark.administrativeArea {
+            annotation.subtitle = "(city) (state)"
+        }
+        mapView.addAnnotation(annotation)
+        let span = MKCoordinateSpanMake(0.05, 0.05)
+        let region = MKCoordinateRegionMake(placemark.coordinate, span)
+        mapView.setRegion(region, animated: true)
+    }
 }
