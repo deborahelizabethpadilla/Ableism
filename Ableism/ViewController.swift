@@ -23,6 +23,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     var resultSearchController:UISearchController? = nil
     
+    let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,9 +36,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         
         //Set Up Search Bar
         
-        let searchBar = resultSearchController!.searchBar
-        searchBar.sizeToFit()
-        searchBar.placeholder = "Search For Locations And Places"
+        let searchBar = resultSearchController?.searchBar
+        searchBar?.sizeToFit()
+        searchBar?.placeholder = "Search For Locations And Places"
         navigationItem.titleView = resultSearchController?.searchBar
         
         //UISearchController Set Up
@@ -155,4 +157,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         return annotationView
     }
     
+    //Close Keyboard With Tap On Screen
+    
+    func dismissKeyboard() {
+
+        view.endEditing(true)
+    
+    }
+
 }
