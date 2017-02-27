@@ -15,7 +15,9 @@ protocol HandleMapSearch {
 }
 
 
-class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
+class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate, UITextFieldDelegate {
+    
+    @IBOutlet var searchTextField: UITextField!
     
     @IBOutlet var mapView: MKMapView!
     
@@ -25,6 +27,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Return Key
+        
+        self.searchTextField.delegate = self;
         
         //Tap Recognizer
         
@@ -167,6 +173,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
 
         view.endEditing(true)
     
+    }
+    
+    //Close Keyboard With Return Key
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
 
 }
