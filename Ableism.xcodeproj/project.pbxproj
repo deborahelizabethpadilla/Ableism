@@ -12,6 +12,9 @@
 		5072DA781E9C330000E0EA7C /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5072DA771E9C330000E0EA7C /* AddLocationViewController.swift */; };
 		5072DA7A1E9C333100E0EA7C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5072DA791E9C333100E0EA7C /* TabBarViewController.swift */; };
 		5072DA7C1E9C335E00E0EA7C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5072DA7B1E9C335E00E0EA7C /* LoginViewController.swift */; };
+		5072DA7E1E9C360C00E0EA7C /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 5072DA7D1E9C360C00E0EA7C /* user.png */; };
+		5072DA801E9C37CA00E0EA7C /* LocalUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5072DA7F1E9C37CA00E0EA7C /* LocalUsersViewController.swift */; };
+		5072DA821E9C37F700E0EA7C /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5072DA811E9C37F700E0EA7C /* FindViewController.swift */; };
 		5086D7311E629E8B0010748D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5086D7301E629E8B0010748D /* AppDelegate.swift */; };
 		5086D7361E629E8D0010748D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5086D7341E629E8D0010748D /* Main.storyboard */; };
 		5086D7381E629E8E0010748D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5086D7371E629E8E0010748D /* Assets.xcassets */; };
@@ -30,6 +33,9 @@
 		5072DA771E9C330000E0EA7C /* AddLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
 		5072DA791E9C333100E0EA7C /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		5072DA7B1E9C335E00E0EA7C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5072DA7D1E9C360C00E0EA7C /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
+		5072DA7F1E9C37CA00E0EA7C /* LocalUsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalUsersViewController.swift; sourceTree = "<group>"; };
+		5072DA811E9C37F700E0EA7C /* FindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
 		5086D72D1E629E8A0010748D /* Ableism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ableism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5086D7301E629E8B0010748D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5086D7351E629E8D0010748D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,6 +67,8 @@
 			children = (
 				5072DA7B1E9C335E00E0EA7C /* LoginViewController.swift */,
 				5072DA791E9C333100E0EA7C /* TabBarViewController.swift */,
+				5072DA811E9C37F700E0EA7C /* FindViewController.swift */,
+				5072DA7F1E9C37CA00E0EA7C /* LocalUsersViewController.swift */,
 				5072DA771E9C330000E0EA7C /* AddLocationViewController.swift */,
 			);
 			name = Controllers;
@@ -104,6 +112,7 @@
 				5086D73C1E629E8F0010748D /* Info.plist */,
 				5072DA731E9C31CE00E0EA7C /* listbullets.png */,
 				5072DA751E9C321D00E0EA7C /* map.png */,
+				5072DA7D1E9C360C00E0EA7C /* user.png */,
 				5086D7481E62B08C0010748D /* wheelchair.png */,
 			);
 			name = Assets;
@@ -196,6 +205,7 @@
 				5086D73B1E629E8E0010748D /* LaunchScreen.storyboard in Resources */,
 				5086D7381E629E8E0010748D /* Assets.xcassets in Resources */,
 				5086D7491E62B08C0010748D /* wheelchair.png in Resources */,
+				5072DA7E1E9C360C00E0EA7C /* user.png in Resources */,
 				5072DA741E9C31CE00E0EA7C /* listbullets.png in Resources */,
 				5086D7361E629E8D0010748D /* Main.storyboard in Resources */,
 			);
@@ -256,10 +266,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5072DA801E9C37CA00E0EA7C /* LocalUsersViewController.swift in Sources */,
 				5072DA7C1E9C335E00E0EA7C /* LoginViewController.swift in Sources */,
 				5072DA7A1E9C333100E0EA7C /* TabBarViewController.swift in Sources */,
 				5086D7311E629E8B0010748D /* AppDelegate.swift in Sources */,
 				5072DA781E9C330000E0EA7C /* AddLocationViewController.swift in Sources */,
+				5072DA821E9C37F700E0EA7C /* FindViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
