@@ -7,24 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5072DA741E9C31CE00E0EA7C /* listbullets.png in Resources */ = {isa = PBXBuildFile; fileRef = 5072DA731E9C31CE00E0EA7C /* listbullets.png */; };
+		5072DA761E9C321D00E0EA7C /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 5072DA751E9C321D00E0EA7C /* map.png */; };
+		5072DA781E9C330000E0EA7C /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5072DA771E9C330000E0EA7C /* AddLocationViewController.swift */; };
+		5072DA7A1E9C333100E0EA7C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5072DA791E9C333100E0EA7C /* TabBarViewController.swift */; };
+		5072DA7C1E9C335E00E0EA7C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5072DA7B1E9C335E00E0EA7C /* LoginViewController.swift */; };
 		5086D7311E629E8B0010748D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5086D7301E629E8B0010748D /* AppDelegate.swift */; };
-		5086D7331E629E8C0010748D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5086D7321E629E8C0010748D /* ViewController.swift */; };
 		5086D7361E629E8D0010748D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5086D7341E629E8D0010748D /* Main.storyboard */; };
 		5086D7381E629E8E0010748D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5086D7371E629E8E0010748D /* Assets.xcassets */; };
 		5086D73B1E629E8E0010748D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5086D7391E629E8E0010748D /* LaunchScreen.storyboard */; };
 		5086D7451E62A13A0010748D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5086D7441E62A13A0010748D /* MapKit.framework */; };
 		5086D7471E62A18F0010748D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5086D7461E62A18F0010748D /* CoreLocation.framework */; };
 		5086D7491E62B08C0010748D /* wheelchair.png in Resources */ = {isa = PBXBuildFile; fileRef = 5086D7481E62B08C0010748D /* wheelchair.png */; };
-		5086D74F1E62BAB90010748D /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5086D74E1E62BAB90010748D /* LocationSearchTable.swift */; };
 		A419D952EE754D30DF679CA7 /* Pods_Ableism.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3727C17B2CDD52A9FD9B2D79 /* Pods_Ableism.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		34645584E3AE4BEA37ECDE0B /* Pods-Ableism.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ableism.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ableism/Pods-Ableism.debug.xcconfig"; sourceTree = "<group>"; };
 		3727C17B2CDD52A9FD9B2D79 /* Pods_Ableism.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ableism.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5072DA731E9C31CE00E0EA7C /* listbullets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = listbullets.png; sourceTree = "<group>"; };
+		5072DA751E9C321D00E0EA7C /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		5072DA771E9C330000E0EA7C /* AddLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
+		5072DA791E9C333100E0EA7C /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		5072DA7B1E9C335E00E0EA7C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5086D72D1E629E8A0010748D /* Ableism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ableism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5086D7301E629E8B0010748D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5086D7321E629E8C0010748D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5086D7351E629E8D0010748D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5086D7371E629E8E0010748D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5086D73A1E629E8E0010748D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -32,7 +39,6 @@
 		5086D7441E62A13A0010748D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5086D7461E62A18F0010748D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5086D7481E62B08C0010748D /* wheelchair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wheelchair.png; path = ../wheelchair.png; sourceTree = "<group>"; };
-		5086D74E1E62BAB90010748D /* LocationSearchTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
 		C7D3553F5C4257A4B5BA4B37 /* Pods-Ableism.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ableism.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ableism/Pods-Ableism.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,10 +56,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5072DA6C1E9C2CC300E0EA7C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5072DA7B1E9C335E00E0EA7C /* LoginViewController.swift */,
+				5072DA791E9C333100E0EA7C /* TabBarViewController.swift */,
+				5072DA771E9C330000E0EA7C /* AddLocationViewController.swift */,
+			);
+			name = Controllers;
+			path = Ableism;
+			sourceTree = "<group>";
+		};
 		5086D7241E629E890010748D = {
 			isa = PBXGroup;
 			children = (
 				5086D72F1E629E8B0010748D /* Ableism */,
+				5072DA6C1E9C2CC300E0EA7C /* Controllers */,
 				5086D7421E62A0ED0010748D /* Assets */,
 				5086D72E1E629E8A0010748D /* Products */,
 				5086D7431E62A13A0010748D /* Frameworks */,
@@ -73,8 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				5086D7301E629E8B0010748D /* AppDelegate.swift */,
-				5086D7321E629E8C0010748D /* ViewController.swift */,
-				5086D74E1E62BAB90010748D /* LocationSearchTable.swift */,
 			);
 			path = Ableism;
 			sourceTree = "<group>";
@@ -86,6 +102,8 @@
 				5086D7371E629E8E0010748D /* Assets.xcassets */,
 				5086D7391E629E8E0010748D /* LaunchScreen.storyboard */,
 				5086D73C1E629E8F0010748D /* Info.plist */,
+				5072DA731E9C31CE00E0EA7C /* listbullets.png */,
+				5072DA751E9C321D00E0EA7C /* map.png */,
 				5086D7481E62B08C0010748D /* wheelchair.png */,
 			);
 			name = Assets;
@@ -174,9 +192,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5072DA761E9C321D00E0EA7C /* map.png in Resources */,
 				5086D73B1E629E8E0010748D /* LaunchScreen.storyboard in Resources */,
 				5086D7381E629E8E0010748D /* Assets.xcassets in Resources */,
 				5086D7491E62B08C0010748D /* wheelchair.png in Resources */,
+				5072DA741E9C31CE00E0EA7C /* listbullets.png in Resources */,
 				5086D7361E629E8D0010748D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,9 +256,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5086D74F1E62BAB90010748D /* LocationSearchTable.swift in Sources */,
-				5086D7331E629E8C0010748D /* ViewController.swift in Sources */,
+				5072DA7C1E9C335E00E0EA7C /* LoginViewController.swift in Sources */,
+				5072DA7A1E9C333100E0EA7C /* TabBarViewController.swift in Sources */,
 				5086D7311E629E8B0010748D /* AppDelegate.swift in Sources */,
+				5072DA781E9C330000E0EA7C /* AddLocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
