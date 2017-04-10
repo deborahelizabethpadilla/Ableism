@@ -1,0 +1,6 @@
+framework module Pods_Ableism {
+  umbrella header "Pods-Ableism-umbrella.h"
+
+  export *
+  module * { export * }
+}
