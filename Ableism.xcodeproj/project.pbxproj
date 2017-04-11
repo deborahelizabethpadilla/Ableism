@@ -15,9 +15,6 @@
 		5072DA7E1E9C360C00E0EA7C /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 5072DA7D1E9C360C00E0EA7C /* user.png */; };
 		5072DA801E9C37CA00E0EA7C /* LocalUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5072DA7F1E9C37CA00E0EA7C /* LocalUsersViewController.swift */; };
 		5072DA821E9C37F700E0EA7C /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5072DA811E9C37F700E0EA7C /* FindViewController.swift */; };
-		5072DA8E1E9D35E000E0EA7C /* ChameleonFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5072DA8D1E9D35E000E0EA7C /* ChameleonFramework.framework */; };
-		5072DA901E9D35E500E0EA7C /* TextFieldEffects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5072DA8F1E9D35E500E0EA7C /* TextFieldEffects.framework */; };
-		5072DA921E9D364300E0EA7C /* Pods_Ableism.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5072DA911E9D364300E0EA7C /* Pods_Ableism.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		5086D7311E629E8B0010748D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5086D7301E629E8B0010748D /* AppDelegate.swift */; };
 		5086D7361E629E8D0010748D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5086D7341E629E8D0010748D /* Main.storyboard */; };
 		5086D7381E629E8E0010748D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5086D7371E629E8E0010748D /* Assets.xcassets */; };
@@ -25,12 +22,9 @@
 		5086D7451E62A13A0010748D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5086D7441E62A13A0010748D /* MapKit.framework */; };
 		5086D7471E62A18F0010748D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5086D7461E62A18F0010748D /* CoreLocation.framework */; };
 		5086D7491E62B08C0010748D /* wheelchair.png in Resources */ = {isa = PBXBuildFile; fileRef = 5086D7481E62B08C0010748D /* wheelchair.png */; };
-		C52B8199565FF1F86ACCE45B /* Pods_Ableism.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3727C17B2CDD52A9FD9B2D79 /* Pods_Ableism.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		34645584E3AE4BEA37ECDE0B /* Pods-Ableism.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ableism.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ableism/Pods-Ableism.debug.xcconfig"; sourceTree = "<group>"; };
-		3727C17B2CDD52A9FD9B2D79 /* Pods_Ableism.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ableism.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5072DA731E9C31CE00E0EA7C /* listbullets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = listbullets.png; sourceTree = "<group>"; };
 		5072DA751E9C321D00E0EA7C /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		5072DA771E9C330000E0EA7C /* AddLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
@@ -39,13 +33,6 @@
 		5072DA7D1E9C360C00E0EA7C /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		5072DA7F1E9C37CA00E0EA7C /* LocalUsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalUsersViewController.swift; sourceTree = "<group>"; };
 		5072DA811E9C37F700E0EA7C /* FindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
-		5072DA851E9D311D00E0EA7C /* ChameleonFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ChameleonFramework.framework; path = "Pods/../build/Debug-iphoneos/ChameleonFramework/ChameleonFramework.framework"; sourceTree = "<group>"; };
-		5072DA871E9D312300E0EA7C /* TextFieldEffects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TextFieldEffects.framework; path = "Pods/../build/Debug-iphoneos/TextFieldEffects/TextFieldEffects.framework"; sourceTree = "<group>"; };
-		5072DA891E9D318100E0EA7C /* Pods_Ableism.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Ableism.framework; path = "Pods/../build/Release-iphoneos/Pods_Ableism.framework"; sourceTree = "<group>"; };
-		5072DA8B1E9D356B00E0EA7C /* Pods_Ableism.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Ableism.framework; path = "Pods/../build/Debug-iphoneos/Pods_Ableism.framework"; sourceTree = "<group>"; };
-		5072DA8D1E9D35E000E0EA7C /* ChameleonFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ChameleonFramework.framework; path = "../../Library/Developer/Xcode/DerivedData/Ableism-axavmpyyegfcgpespgchslbfxjry/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework"; sourceTree = "<group>"; };
-		5072DA8F1E9D35E500E0EA7C /* TextFieldEffects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TextFieldEffects.framework; path = "../../Library/Developer/Xcode/DerivedData/Ableism-axavmpyyegfcgpespgchslbfxjry/Build/Products/Debug-iphonesimulator/TextFieldEffects/TextFieldEffects.framework"; sourceTree = "<group>"; };
-		5072DA911E9D364300E0EA7C /* Pods_Ableism.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Ableism.framework; path = "Pods/../build/Debug-iphoneos/Pods_Ableism.framework"; sourceTree = "<group>"; };
 		5086D72D1E629E8A0010748D /* Ableism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ableism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5086D7301E629E8B0010748D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5086D7351E629E8D0010748D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,7 +42,6 @@
 		5086D7441E62A13A0010748D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5086D7461E62A18F0010748D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5086D7481E62B08C0010748D /* wheelchair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wheelchair.png; path = ../wheelchair.png; sourceTree = "<group>"; };
-		C7D3553F5C4257A4B5BA4B37 /* Pods-Ableism.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ableism.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ableism/Pods-Ableism.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5072DA921E9D364300E0EA7C /* Pods_Ableism.framework in Frameworks */,
-				5072DA901E9D35E500E0EA7C /* TextFieldEffects.framework in Frameworks */,
-				5072DA8E1E9D35E000E0EA7C /* ChameleonFramework.framework in Frameworks */,
 				5086D7471E62A18F0010748D /* CoreLocation.framework in Frameworks */,
 				5086D7451E62A13A0010748D /* MapKit.framework in Frameworks */,
-				C52B8199565FF1F86ACCE45B /* Pods_Ableism.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +78,6 @@
 				5086D7421E62A0ED0010748D /* Assets */,
 				5086D72E1E629E8A0010748D /* Products */,
 				5086D7431E62A13A0010748D /* Frameworks */,
-				6F4E8A8928C7A32207A34753 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,27 +116,10 @@
 		5086D7431E62A13A0010748D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5072DA911E9D364300E0EA7C /* Pods_Ableism.framework */,
-				5072DA8F1E9D35E500E0EA7C /* TextFieldEffects.framework */,
-				5072DA8D1E9D35E000E0EA7C /* ChameleonFramework.framework */,
-				5072DA8B1E9D356B00E0EA7C /* Pods_Ableism.framework */,
-				5072DA891E9D318100E0EA7C /* Pods_Ableism.framework */,
-				5072DA871E9D312300E0EA7C /* TextFieldEffects.framework */,
-				5072DA851E9D311D00E0EA7C /* ChameleonFramework.framework */,
 				5086D7461E62A18F0010748D /* CoreLocation.framework */,
 				5086D7441E62A13A0010748D /* MapKit.framework */,
-				3727C17B2CDD52A9FD9B2D79 /* Pods_Ableism.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6F4E8A8928C7A32207A34753 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				34645584E3AE4BEA37ECDE0B /* Pods-Ableism.debug.xcconfig */,
-				C7D3553F5C4257A4B5BA4B37 /* Pods-Ableism.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,12 +129,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5086D73F1E629E8F0010748D /* Build configuration list for PBXNativeTarget "Ableism" */;
 			buildPhases = (
-				BAC8DD4EFB5258CAD0F3F64D /* [CP] Check Pods Manifest.lock */,
 				5086D7291E629E8A0010748D /* Sources */,
 				5086D72A1E629E8A0010748D /* Frameworks */,
 				5086D72B1E629E8A0010748D /* Resources */,
-				3E9E21F3B6C3AD2FF0BAEE4C /* [CP] Embed Pods Frameworks */,
-				E1F39D0EDE53ABFB8794419C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,54 +193,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		3E9E21F3B6C3AD2FF0BAEE4C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ableism/Pods-Ableism-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BAC8DD4EFB5258CAD0F3F64D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		E1F39D0EDE53ABFB8794419C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ableism/Pods-Ableism-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5086D7291E629E8A0010748D /* Sources */ = {
@@ -412,11 +325,11 @@
 		};
 		5086D7401E629E8F0010748D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34645584E3AE4BEA37ECDE0B /* Pods-Ableism.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4J6N8TR2LN;
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Ableism/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -436,11 +349,11 @@
 		};
 		5086D7411E629E8F0010748D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7D3553F5C4257A4B5BA4B37 /* Pods-Ableism.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4J6N8TR2LN;
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Ableism/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
