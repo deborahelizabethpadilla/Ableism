@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import ChameleonFramework
 
 class LoginViewController: UIViewController {
 
@@ -16,7 +15,7 @@ class LoginViewController: UIViewController {
 
         //Set Custom Background
         
-        view.backgroundColor = FlatPlum()
+        
     }
 
     override func didReceiveMemoryWarning() {
