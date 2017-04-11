@@ -22,6 +22,7 @@
 		5086D7451E62A13A0010748D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5086D7441E62A13A0010748D /* MapKit.framework */; };
 		5086D7471E62A18F0010748D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5086D7461E62A18F0010748D /* CoreLocation.framework */; };
 		5086D7491E62B08C0010748D /* wheelchair.png in Resources */ = {isa = PBXBuildFile; fileRef = 5086D7481E62B08C0010748D /* wheelchair.png */; };
+		AF20EC397327996ED8C605C0 /* Pods_Ableism.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712F4BC79E83F5B9324BC69B /* Pods_Ableism.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,9 @@
 		5086D7441E62A13A0010748D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5086D7461E62A18F0010748D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5086D7481E62B08C0010748D /* wheelchair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wheelchair.png; path = ../wheelchair.png; sourceTree = "<group>"; };
+		712F4BC79E83F5B9324BC69B /* Pods_Ableism.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ableism.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8C662CD6D7973060E2E9F1D /* Pods-Ableism.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ableism.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ableism/Pods-Ableism.release.xcconfig"; sourceTree = "<group>"; };
+		FB808D629AF8B87CF58F2C44 /* Pods-Ableism.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ableism.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ableism/Pods-Ableism.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 			files = (
 				5086D7471E62A18F0010748D /* CoreLocation.framework in Frameworks */,
 				5086D7451E62A13A0010748D /* MapKit.framework in Frameworks */,
+				AF20EC397327996ED8C605C0 /* Pods_Ableism.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 				5086D7421E62A0ED0010748D /* Assets */,
 				5086D72E1E629E8A0010748D /* Products */,
 				5086D7431E62A13A0010748D /* Frameworks */,
+				5A9E825AB75F624F9CF7E354 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,8 +124,18 @@
 			children = (
 				5086D7461E62A18F0010748D /* CoreLocation.framework */,
 				5086D7441E62A13A0010748D /* MapKit.framework */,
+				712F4BC79E83F5B9324BC69B /* Pods_Ableism.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A9E825AB75F624F9CF7E354 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB808D629AF8B87CF58F2C44 /* Pods-Ableism.debug.xcconfig */,
+				D8C662CD6D7973060E2E9F1D /* Pods-Ableism.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,9 +145,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5086D73F1E629E8F0010748D /* Build configuration list for PBXNativeTarget "Ableism" */;
 			buildPhases = (
+				F1ACDBD401A7B943B73135E2 /* [CP] Check Pods Manifest.lock */,
 				5086D7291E629E8A0010748D /* Sources */,
 				5086D72A1E629E8A0010748D /* Frameworks */,
 				5086D72B1E629E8A0010748D /* Resources */,
+				8973476486FDF40FADFF1370 /* [CP] Embed Pods Frameworks */,
+				A9049CE3AC454DD11A0E52C2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +212,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8973476486FDF40FADFF1370 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ableism/Pods-Ableism-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9049CE3AC454DD11A0E52C2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ableism/Pods-Ableism-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1ACDBD401A7B943B73135E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5086D7291E629E8A0010748D /* Sources */ = {
@@ -325,6 +392,7 @@
 		};
 		5086D7401E629E8F0010748D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB808D629AF8B87CF58F2C44 /* Pods-Ableism.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -349,6 +417,7 @@
 		};
 		5086D7411E629E8F0010748D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8C662CD6D7973060E2E9F1D /* Pods-Ableism.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
