@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ChameleonFramework
 
 class LoginViewController: UIViewController {
 
@@ -14,6 +15,8 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         //Set Custom Background
+        
+        view.backgroundColor = FlatWhite()
         
         
     }
