@@ -15,6 +15,11 @@
 		5072DA9A1E9D741F00E0EA7C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5072DA991E9D741F00E0EA7C /* TabBarViewController.swift */; };
 		5072DA9C1E9DC6B100E0EA7C /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 5072DA9B1E9DC6B100E0EA7C /* add.png */; };
 		5072DA9E1E9DC7B500E0EA7C /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 5072DA9D1E9DC7B500E0EA7C /* cancel.png */; };
+		5072DAA51E9DDE9400E0EA7C /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5072DAA31E9DDE9400E0EA7C /* CoreDataModel.xcdatamodeld */; };
+		5072DAA81E9DDF8900E0EA7C /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5072DAA71E9DDF8900E0EA7C /* Pin.swift */; };
+		5072DAAA1E9DDF9E00E0EA7C /* PinProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5072DAA91E9DDF9E00E0EA7C /* PinProperties.swift */; };
+		5072DAAC1E9DE02200E0EA7C /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5072DAAB1E9DE02200E0EA7C /* CoreDataStack.swift */; };
+		5072DAAE1E9DE10400E0EA7C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5072DAAD1E9DE10400E0EA7C /* TableViewCell.swift */; };
 		5086D7311E629E8B0010748D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5086D7301E629E8B0010748D /* AppDelegate.swift */; };
 		5086D7361E629E8D0010748D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5086D7341E629E8D0010748D /* Main.storyboard */; };
 		5086D7381E629E8E0010748D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5086D7371E629E8E0010748D /* Assets.xcassets */; };
@@ -34,6 +39,11 @@
 		5072DA991E9D741F00E0EA7C /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		5072DA9B1E9DC6B100E0EA7C /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
 		5072DA9D1E9DC7B500E0EA7C /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel.png; sourceTree = "<group>"; };
+		5072DAA41E9DDE9400E0EA7C /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		5072DAA71E9DDF8900E0EA7C /* Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pin.swift; sourceTree = "<group>"; };
+		5072DAA91E9DDF9E00E0EA7C /* PinProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinProperties.swift; sourceTree = "<group>"; };
+		5072DAAB1E9DE02200E0EA7C /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		5072DAAD1E9DE10400E0EA7C /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		5086D72D1E629E8A0010748D /* Ableism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ableism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5086D7301E629E8B0010748D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5086D7351E629E8D0010748D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -68,8 +78,19 @@
 				5072DA991E9D741F00E0EA7C /* TabBarViewController.swift */,
 				5072DA811E9C37F700E0EA7C /* FindViewController.swift */,
 				5072DA771E9C330000E0EA7C /* AddLocationViewController.swift */,
+				5072DAAD1E9DE10400E0EA7C /* TableViewCell.swift */,
 			);
 			name = Controllers;
+			path = Ableism;
+			sourceTree = "<group>";
+		};
+		5072DAA61E9DDF1D00E0EA7C /* Extra Files */ = {
+			isa = PBXGroup;
+			children = (
+				5072DAA71E9DDF8900E0EA7C /* Pin.swift */,
+				5072DAA91E9DDF9E00E0EA7C /* PinProperties.swift */,
+			);
+			name = "Extra Files";
 			path = Ableism;
 			sourceTree = "<group>";
 		};
@@ -78,6 +99,7 @@
 			children = (
 				5086D72F1E629E8B0010748D /* Ableism */,
 				5072DA6C1E9C2CC300E0EA7C /* Controllers */,
+				5072DAA61E9DDF1D00E0EA7C /* Extra Files */,
 				5086D7421E62A0ED0010748D /* Assets */,
 				5086D72E1E629E8A0010748D /* Products */,
 				5086D7431E62A13A0010748D /* Frameworks */,
@@ -97,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				5086D7301E629E8B0010748D /* AppDelegate.swift */,
+				5072DAAB1E9DE02200E0EA7C /* CoreDataStack.swift */,
+				5072DAA31E9DDE9400E0EA7C /* CoreDataModel.xcdatamodeld */,
 			);
 			path = Ableism;
 			sourceTree = "<group>";
@@ -271,7 +295,12 @@
 				5086D7311E629E8B0010748D /* AppDelegate.swift in Sources */,
 				5072DA781E9C330000E0EA7C /* AddLocationViewController.swift in Sources */,
 				5072DA9A1E9D741F00E0EA7C /* TabBarViewController.swift in Sources */,
+				5072DAAE1E9DE10400E0EA7C /* TableViewCell.swift in Sources */,
+				5072DAA81E9DDF8900E0EA7C /* Pin.swift in Sources */,
+				5072DAAA1E9DDF9E00E0EA7C /* PinProperties.swift in Sources */,
 				5072DA821E9C37F700E0EA7C /* FindViewController.swift in Sources */,
+				5072DAA51E9DDE9400E0EA7C /* CoreDataModel.xcdatamodeld in Sources */,
+				5072DAAC1E9DE02200E0EA7C /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +497,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5072DAA31E9DDE9400E0EA7C /* CoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5072DAA41E9DDE9400E0EA7C /* CoreDataModel.xcdatamodel */,
+			);
+			currentVersion = 5072DAA41E9DDE9400E0EA7C /* CoreDataModel.xcdatamodel */;
+			path = CoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5086D7251E629E890010748D /* Project object */;
 }

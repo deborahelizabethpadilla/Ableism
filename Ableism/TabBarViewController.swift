@@ -7,16 +7,12 @@
 //
 
 import UIKit
-import ChameleonFramework
 
 class TabBarViewController: UITabBarController {
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
-        //Custom Tab Bar Background
-        
-        self.tabBar.barTintColor = FlatGreen()
     }
 
     override func didReceiveMemoryWarning() {
