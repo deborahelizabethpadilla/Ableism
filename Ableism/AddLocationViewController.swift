@@ -7,13 +7,19 @@
 //
 
 import UIKit
+import ChameleonFramework
 
 class AddLocationViewController: UIViewController {
+    
+    //Outlets
 
+    @IBOutlet var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
-        //Set Custom Background
     }
 
     override func didReceiveMemoryWarning() {
