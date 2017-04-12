@@ -10,14 +10,10 @@
 		5072DA741E9C31CE00E0EA7C /* listbullets.png in Resources */ = {isa = PBXBuildFile; fileRef = 5072DA731E9C31CE00E0EA7C /* listbullets.png */; };
 		5072DA761E9C321D00E0EA7C /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 5072DA751E9C321D00E0EA7C /* map.png */; };
 		5072DA781E9C330000E0EA7C /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5072DA771E9C330000E0EA7C /* AddLocationViewController.swift */; };
-		5072DA7A1E9C333100E0EA7C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5072DA791E9C333100E0EA7C /* TabBarViewController.swift */; };
-		5072DA7C1E9C335E00E0EA7C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5072DA7B1E9C335E00E0EA7C /* LoginViewController.swift */; };
 		5072DA7E1E9C360C00E0EA7C /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 5072DA7D1E9C360C00E0EA7C /* user.png */; };
 		5072DA801E9C37CA00E0EA7C /* LocalUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5072DA7F1E9C37CA00E0EA7C /* LocalUsersViewController.swift */; };
 		5072DA821E9C37F700E0EA7C /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5072DA811E9C37F700E0EA7C /* FindViewController.swift */; };
-		5072DA951E9D65F500E0EA7C /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5072DA931E9D65F500E0EA7C /* FBSDKCoreKit.framework */; };
-		5072DA961E9D65F500E0EA7C /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5072DA941E9D65F500E0EA7C /* FBSDKLoginKit.framework */; };
-		5072DA981E9D660900E0EA7C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5072DA971E9D660900E0EA7C /* Bolts.framework */; };
+		5072DA9A1E9D741F00E0EA7C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5072DA991E9D741F00E0EA7C /* TabBarViewController.swift */; };
 		5086D7311E629E8B0010748D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5086D7301E629E8B0010748D /* AppDelegate.swift */; };
 		5086D7361E629E8D0010748D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5086D7341E629E8D0010748D /* Main.storyboard */; };
 		5086D7381E629E8E0010748D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5086D7371E629E8E0010748D /* Assets.xcassets */; };
@@ -32,14 +28,10 @@
 		5072DA731E9C31CE00E0EA7C /* listbullets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = listbullets.png; sourceTree = "<group>"; };
 		5072DA751E9C321D00E0EA7C /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		5072DA771E9C330000E0EA7C /* AddLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
-		5072DA791E9C333100E0EA7C /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		5072DA7B1E9C335E00E0EA7C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5072DA7D1E9C360C00E0EA7C /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		5072DA7F1E9C37CA00E0EA7C /* LocalUsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalUsersViewController.swift; sourceTree = "<group>"; };
 		5072DA811E9C37F700E0EA7C /* FindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
-		5072DA931E9D65F500E0EA7C /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		5072DA941E9D65F500E0EA7C /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
-		5072DA971E9D660900E0EA7C /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		5072DA991E9D741F00E0EA7C /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		5086D72D1E629E8A0010748D /* Ableism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ableism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5086D7301E629E8B0010748D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5086D7351E629E8D0010748D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,9 +52,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5086D7471E62A18F0010748D /* CoreLocation.framework in Frameworks */,
-				5072DA951E9D65F500E0EA7C /* FBSDKCoreKit.framework in Frameworks */,
-				5072DA961E9D65F500E0EA7C /* FBSDKLoginKit.framework in Frameworks */,
-				5072DA981E9D660900E0EA7C /* Bolts.framework in Frameworks */,
 				5086D7451E62A13A0010748D /* MapKit.framework in Frameworks */,
 				AF20EC397327996ED8C605C0 /* Pods_Ableism.framework in Frameworks */,
 			);
@@ -74,8 +63,7 @@
 		5072DA6C1E9C2CC300E0EA7C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5072DA7B1E9C335E00E0EA7C /* LoginViewController.swift */,
-				5072DA791E9C333100E0EA7C /* TabBarViewController.swift */,
+				5072DA991E9D741F00E0EA7C /* TabBarViewController.swift */,
 				5072DA811E9C37F700E0EA7C /* FindViewController.swift */,
 				5072DA7F1E9C37CA00E0EA7C /* LocalUsersViewController.swift */,
 				5072DA771E9C330000E0EA7C /* AddLocationViewController.swift */,
@@ -87,9 +75,6 @@
 		5086D7241E629E890010748D = {
 			isa = PBXGroup;
 			children = (
-				5072DA971E9D660900E0EA7C /* Bolts.framework */,
-				5072DA931E9D65F500E0EA7C /* FBSDKCoreKit.framework */,
-				5072DA941E9D65F500E0EA7C /* FBSDKLoginKit.framework */,
 				5086D72F1E629E8B0010748D /* Ableism */,
 				5072DA6C1E9C2CC300E0EA7C /* Controllers */,
 				5086D7421E62A0ED0010748D /* Assets */,
@@ -279,10 +264,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5072DA801E9C37CA00E0EA7C /* LocalUsersViewController.swift in Sources */,
-				5072DA7C1E9C335E00E0EA7C /* LoginViewController.swift in Sources */,
-				5072DA7A1E9C333100E0EA7C /* TabBarViewController.swift in Sources */,
 				5086D7311E629E8B0010748D /* AppDelegate.swift in Sources */,
 				5072DA781E9C330000E0EA7C /* AddLocationViewController.swift in Sources */,
+				5072DA9A1E9D741F00E0EA7C /* TabBarViewController.swift in Sources */,
 				5072DA821E9C37F700E0EA7C /* FindViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
